@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --BG-COLOR:#000000;
+  --COLOR-TEXT: #E1E1E6;
+  --COLOR-HEADER-TABLE: #092D38;
+  --COLOR-PLACEHOLDER: #7C7C8A;
+  --BG-COLOR-BUTTON: #065E7C;
+  --BG-COLOR-INPUT: #06181C;
+  --COLOR-TEXT-REMOVE: red;
+
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--BG-COLOR);
+  color: var(--COLOR-TEXT);
+}
+
+#app {
+  max-width:112rem;
+  height: 62.4rem;
+  margin: auto;
+  padding: 11.5rem 16rem;
+}
+
+header {
+  display: flex;
+  
+}
+
+header > img {
+  margin-right: 11.9rem;
+}
+
+input{
+  width: 46.2rem;
+  height: 4.8rem;
+  padding: 1.6rem;
+  background-color: var(--BG-COLOR-INPUT);
+  border: none;
+  border-radius: .5rem;
+  margin-right: .8rem;
+  color: var(--COLOR-TEXT);
+}
+
+.input-wrapper input::placeholder{
+  color: var(--COLOR-PLACEHOLDER);
+  font-family: 'Roboto';
+}
+
+header button {
+  background-color: var(--BG-COLOR-BUTTON);
+  border: none;
+  padding: 1.2rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  font-family: 'Roboto';
+  color: var(--COLOR-TEXT);
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 8.7rem;
+  width: 100%;
+  color: var(--COLOR-TEXT);
+  font-family: 'Roboto';
+}
+
+table th:last-child{
+  border-top-right-radius: 1.2rem;
+}
+
+table th:first-child{
+  border-top-left-radius: 1.2rem;
+}
+
+th {
+  text-align: start;
+  padding: 2.4rem 4rem;
+  font-family: 2rem;
+}
+
+tr {
+  background-color: var(--COLOR-HEADER-TABLE);
+}
+
+tr td {
+  background-color: #1c1c1c;
+}
+
+
+tbody img {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+}
+
+td {
+  padding: 2.4rem 4rem;
+  font-family: 'Roboto';
+  border-bottom: 1px solid var(--COLOR-HEADER-TABLE);
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+td a {
+  text-decoration: none;
+  color: var(--COLOR-TEXT);
+}
+
+td span {
+  font-weight: 700;
+}
+
+td p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+}
+
+table .remove {
+  border: none;
+  background-color: transparent;
+  color: var(--COLOR-TEXT-REMOVE);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
