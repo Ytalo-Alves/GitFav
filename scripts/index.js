@@ -10,5 +10,5 @@ btnFavorites.onclick = () => {
 }
 
 btnRemove.addEventListener('click', () => {
-  alert('Usuario removido')
+  alert('Usuario deletado')
 })
