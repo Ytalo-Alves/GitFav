@@ -31,15 +31,11 @@ body {
 
 header {
   display: flex;
-  
+  justify-content: space-between;
 }
 
-header > img {
-  margin-right: 11.9rem;
-}
-
-input{
-  width: 46.2rem;
+.search input{
+  width: 36.2rem;
   height: 4.8rem;
   padding: 1.6rem;
   background-color: var(--BG-COLOR-INPUT);
@@ -49,7 +45,7 @@ input{
   color: var(--COLOR-TEXT);
 }
 
-.input-wrapper input::placeholder{
+.search input::placeholder{
   color: var(--COLOR-PLACEHOLDER);
   font-family: 'Roboto';
 }
@@ -118,17 +114,17 @@ td.user {
   gap: 1.6rem;
 }
 
-td a {
+.user a {
+  font-size: 2rem;
   text-decoration: none;
   color: var(--COLOR-TEXT);
 }
 
-td span {
-  font-weight: 700;
+.user span {
+  font-size: 2rem;
 }
 
-td p {
-  font-weight: 400;
+.user p {
   font-style: normal;
   font-size: 1.4rem;
 }
@@ -139,4 +135,12 @@ table .remove {
   color: var(--COLOR-TEXT-REMOVE);
   font-size: 1.6rem;
   cursor: pointer;
+}
+
+.search{
+  display: flex;
+}
+
+.container {
+  padding-bottom: 5rem;
 }

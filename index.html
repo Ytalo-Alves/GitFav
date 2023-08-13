@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="./styles/index.css">
-  <script src="./scripts/index.js" type="module" defer></script>
+  <script src="./scripts/main.js" type="module" defer></script>
 
   <title>Git Favorites v2</title>
 </head>
@@ -16,14 +16,17 @@
   <div id="app">
     <header>
       <img src="./assets/Gitfav.svg" alt="Logo Marca">
+      <div class="search">
         <label for="gitfav" hidden></label>
-        <input class="userName" type="text" placeholder="Digite o username que deseja favoritar"/>
+        <input id="input-search" type="text" placeholder="Digite o username que deseja favoritar"/>
         <button id="btnfavorites">
           <img src="./assets/Vector.png" alt="Estrela para favoritar">
           Favoritar
         </button>
+      </div>
     </header>
 
+    <div class="container">
     <table>
       <thead>
         <tr>
@@ -34,56 +37,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="user">
-            <img src="https://github.com/Ytalo-Alves.png" alt="">
-            <a href="https://github.com/Ytalo-Alves" target="_blank">
-              <span>Ytalo Alves</span>
-              <p>Ytalo-Alves</p>
-            </a>
-          </td>
-          <td class="repositories">123</td>
-          <td class="Followers">1234</td>
-          <td>
-            <button class="remove">
-              Remover
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td class="user">
-            <img src="https://github.com/Ytalo-Alves.png" alt="">
-            <a href="https://github.com/Ytalo-Alves" target="_blank">
-              <span>Ytalo Alves</span>
-              <p>Ytalo-Alves</p>
-            </a>
-          </td>
-          <td class="repositories">123</td>
-          <td class="Followers">1234</td>
-          <td>
-            <button class="remove">
-              Remover
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td class="user">
-            <img src="https://github.com/Ytalo-Alves.png" alt="">
-            <a href="https://github.com/Ytalo-Alves" target="_blank">
-              <span>Ytalo Alves</span>
-              <p>Ytalo-Alves</p>
-            </a>
-          </td>
-          <td class="repositories">123</td>
-          <td class="Followers">1234</td>
-          <td>
-           <button class="remove">
-              Remover
-            </button>
-          </td>
-        </tr>
       </tbody>
     </table>
+  </div>
   </div>
 </body>
 </html>
